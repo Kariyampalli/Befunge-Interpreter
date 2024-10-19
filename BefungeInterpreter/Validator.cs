@@ -85,13 +85,13 @@ namespace BefungeInterpreter
             return Tuple.Create(true, playField);
         }
 
-        public bool ValidateFile(string file)
+        public bool ValidateFile(string filepath, string file)
         {
             if(file == null)
             {
                 throw new InvalidOperationException("Directory or file was null!");
             }
-            string f = $@"..\{file}";
+            string f = $@"{filepath}{file}";
             return File.Exists(f);
         }
     }

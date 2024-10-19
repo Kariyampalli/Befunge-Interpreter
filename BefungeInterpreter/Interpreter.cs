@@ -49,7 +49,8 @@ namespace BefungeInterpreter
 
             while (!fileIsCorrect)
             {
-                this.writeArgs?.Invoke(this, new WriteOnConsoleEventArgs("Put in the filename (neeeds to be a bf file)", ConsoleOutputType.WriteLine, true, ConsoleColor.White, this));
+                this.writeArgs?.Invoke(this, new WriteOnConsoleEventArgs("--- Disclaimer: Only bf File allowed stored in the folder \\Befunge_Samples ---", ConsoleOutputType.WriteLine, true, ConsoleColor.White, this));
+                this.writeArgs?.Invoke(this, new WriteOnConsoleEventArgs("Put in the filename: ", ConsoleOutputType.WriteLine, false, ConsoleColor.White, this));
                 string input = Console.ReadLine();
 
                 try

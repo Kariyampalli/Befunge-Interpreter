@@ -119,7 +119,7 @@ namespace ValidatorTest
         {
             try
             {
-                this.validator.ValidateFile("Hi.bf");
+                this.validator.ValidateFile(@".\..\", "test.bf");
             }
             catch(InvalidOperationException ex)
             {
@@ -128,13 +128,12 @@ namespace ValidatorTest
 
             try
             {
-                this.validator.ValidateFile(null);
+                this.validator.ValidateFile(null,null);
             }
             catch (InvalidOperationException ex)
             {
                 Assert.IsTrue(ex.Message == "Directory or file was null!");
             }
-            //Assert.IsTrue(this.validator.ValidateFile("code.bf")); -> can't test because of path problem
         }
     }
 }
