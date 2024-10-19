@@ -1,6 +1,6 @@
 # Befunge-93 Interpreter
 
-This is a console application built with .NET Framework `4.7.2` that interprets code written in the esoteric programming language **Befunge-93**.
+This is a console application built with .NET Framework `4.7.2` that interprets code written in the esoteric programming language **Befunge-93**. It also includes Unit tests with **MSTest**.
 
 ![Hello World Example](./Gifs/hello_world.gif)  
 ![Less or More Example](./Gifs/less_or_more.gif)
